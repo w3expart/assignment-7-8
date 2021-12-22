@@ -225,12 +225,15 @@ margin-bottom: 25px;
 font-family: 'Alfa Slab One', cursive;
 font-size: 16px;
 font-weight: 500;
-border-style: none;
+border: 2px solid;
+background-color: transparent;
+border-style: ;
 padding: 22px 38px;
-background-color: #bf2222;
-color: white;
+color: red;
+border-radius: 10px;
 margin-bottom: 156px;
 position: relative;
+z-index: 999;
 }
 .o-item button::before{
 	position: absolute;
@@ -239,12 +242,16 @@ position: relative;
 	bottom: 0;
 	top: 0;
 	width: 0%;
-	background-color: red;
-	transition: 2s;
+	border-radius: 10px;
+	background-color: #2259bf;
+	transition: .5s;
+	z-index: -1;
 }
 .o-item button:hover::before{
 	width: 100%;
-	transition: 2s;
+	border-radius: 10px;
+	transition: 1s;
+	z-index: -1;
 
 }
 .o-item button:hover{
